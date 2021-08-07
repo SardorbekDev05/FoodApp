@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white2">#E7E0DA</color>
     <color name="green">#22E286</color>
+    <color name="red">#FF0000</color>
+    <color name="cc">#FF8300</color>
+    <color name="blue">#0023FF</color>
+    <color name="yelow">#FFD400</color>
+
+
 </resources>

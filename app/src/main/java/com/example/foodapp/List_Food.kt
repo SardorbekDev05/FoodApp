@@ -11,17 +11,18 @@ import kotlinx.android.synthetic.main.activity_list__food.*
 
 class List_Food : AppCompatActivity() {
     lateinit var myAdabter: MyAdabter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list__food)
+        val list =MySharedPreference.obektString
 
+        setContentView(R.layout.activity_list__food)
 
         title="Barcha taomlar"
         MySharedPreference.init(this)
-        val list =MySharedPreference.obektString
-
         myAdabter= MyAdabter(this,list)
         list_food.adapter=myAdabter
+
         list_food.setOnItemClickListener { parent, view, position, id ->
 
             val intent = Intent(this,AboutFood_Activity::class.java)
